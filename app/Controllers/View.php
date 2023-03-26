@@ -4,22 +4,30 @@ namespace App\Controllers;
 
 class View extends BaseController
 {
+    protected $data;
+
+    public function __construct() {
+        $this->data = array(
+            'title' => 'i-Posyandu',
+            'session' => session()
+        );
+    }
+
     public function login()
     {
-        $data = [
-            'session' => \session(),
-        ];
 
-        return view('v_login', $data);
+        return view('v_login', $this->data);
     }
 
     public function dashboard()
     {
-        $data = [
-            'session' => \session(),
-            'title' => "Dashboard",
-        ];
-
-        return view('v_dashboard', $data);
+        $this->data['title'] = 'Dashboard';
+        return view('v_dashboard', $this->data);
+    }
+    
+    public function posyandu()
+    {
+        $this->data['title'] = 'Manajemen Posyandu';
+        return view('v_posyandu', $this->data);
     }
 }

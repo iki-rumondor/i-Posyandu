@@ -55,24 +55,24 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
             <li class="nav-item">
-              <a href="#" class="nav-link <?= $title == "Dashboard" ? 'active' : '' ?>">
+              <a href="<?= base_url('view/dashboard') ?>" class="nav-link <?= $title == "Dashboard" ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
                 </p>
               </a>
             </li>
-            
+
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?= base_url('view/posyandu') ?>" class="nav-link <?= $title == 'Manajemen Posyandu' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-hospital-user"></i>
                 <p>
                   Manajemen Posyandu
                 </p>
               </a>
             </li>
-            
-            
+
+
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-pills"></i>
@@ -81,7 +81,7 @@
                 </p>
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-calendar-alt"></i>
@@ -90,7 +90,7 @@
                 </p>
               </a>
             </li>
-            
+
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -100,11 +100,12 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      
+
       <!-- Main content -->
       <div class="content p-4">
         <?= $this->renderSection('content') ?>
       </div>
+      
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
@@ -122,6 +123,12 @@
   <script src="<?= base_url('assets/plugins/jquery/jquery.min.js') ?>"></script>
   <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
   <script src="<?= base_url('assets/dist/js/adminlte.min.js') ?>"></script>
+
+  <script>
+    $('#myModal').on('shown.bs.modal', function() {
+      $('#myInput').trigger('focus')
+    })
+  </script>
 </body>
 
 </html>

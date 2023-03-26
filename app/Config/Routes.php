@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/view/login', 'View::login');
 $routes->get('/view/dashboard', 'View::dashboard');
+$routes->get('/view/posyandu', 'View::posyandu');
 
 $routes->post('/login', 'Auth::login');
 /*
