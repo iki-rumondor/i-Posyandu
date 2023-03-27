@@ -30,4 +30,16 @@ class View extends BaseController
         $this->data['title'] = 'Manajemen Posyandu';
         return view('v_posyandu', $this->data);
     }
+
+    public function desa()
+    {
+        $this->data['title'] = 'Manajemen Desa';
+        return view('v_desa', $this->data);
+    }
+
+    public function obat()
+    {
+        $this->data['title'] = 'Manajemen Obat';
+        return view('v_obat', $this->data);
+    }
 }

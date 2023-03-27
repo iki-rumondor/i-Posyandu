@@ -64,6 +64,15 @@
             </li>
 
             <li class="nav-item">
+              <a href="<?= base_url('view/desa') ?>" class="nav-link <?= $title == 'Manajemen Desa' ? 'active' : '' ?>">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Manajemen Desa
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
               <a href="<?= base_url('view/posyandu') ?>" class="nav-link <?= $title == 'Manajemen Posyandu' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-hospital-user"></i>
                 <p>
@@ -74,7 +83,7 @@
 
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?= base_url('view/obat') ?>" class="nav-link <?= $title == 'Manajemen Obat' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-pills"></i>
                 <p>
                   Manajemen Obat

@@ -33,6 +33,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/view/login', 'View::login');
 $routes->get('/view/dashboard', 'View::dashboard');
 $routes->get('/view/posyandu', 'View::posyandu');
+$routes->get('/view/desa', 'View::desa');
+$routes->get('/view/obat', 'View::obat');
 
 $routes->post('/login', 'Auth::login');
 /*
