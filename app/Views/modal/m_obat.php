@@ -27,6 +27,37 @@
     </div>
 </div>
 
+<div class="modal fade" id="stokObatModal" tabindex="-1" aria-labelledby="stokObatModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stokObatModalLabel">Tambah Obat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="#" method="post">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Pilih Obat</label>
+                        <select class="form-control">
+                            <option>Paramex</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="stok">Stok Obat</label>
+                        <input min="1" type="number" class="form-control" id="stok" placeholder="Masukkan Stok Obat">
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="editObatModal" tabindex="-1" aria-labelledby="editObatModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -38,7 +69,7 @@
             </div>
             <form action="#" method="post">
                 <div class="modal-body">
-                   
+
 
                     <div class="form-group">
                         <label for="nama">Nama Desa</label>

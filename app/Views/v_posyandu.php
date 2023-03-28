@@ -8,8 +8,8 @@
 <div class="row">
     <div class="col">
         <div class="card">
-            <div class="card-body p-0 table-responsive">
-                <table class="table table-striped overflow-auto">
+            <div style="max-height: 400px;" class="card-body p-0 table-responsive">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -48,4 +48,3 @@
 <?= $this->include('modal\m_posyandu'); ?>
 
 <?= $this->endSection(); ?>
-

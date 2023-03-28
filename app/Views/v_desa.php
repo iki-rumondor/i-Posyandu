@@ -8,8 +8,8 @@
 <div class="row">
     <div class="col-xl-5 col-lg-8 col-sm-10">
         <div class="card">
-            <div class="card-body p-0 table-responsive">
-                <table class="table table-striped overflow-auto">
+            <div style="max-height: 300px;" class="card-body p-0 table-responsive">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>No</th>
